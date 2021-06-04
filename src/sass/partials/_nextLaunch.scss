@@ -1,0 +1,89 @@
+#next_launch {
+  & .row_next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $colour-primary;
+    font-size: 12px;
+    min-height: 100%;
+    padding: 40px 0;
+  }
+
+  & .text_launch {
+    text-align: center;
+    line-height: 0.9;
+    & h2 {
+      color: $colour-hover;
+      text-transform: uppercase;
+      font-size: 30px;
+      margin: 0px 30px 50px;
+    }
+
+    & .day {
+      display: flex;
+    }
+
+    & p {
+      color: $colour-hover;
+      text-transform: uppercase;
+      font-family: "Orbitron", sans-serif;
+      font-weight: 800;
+      width: 25%;
+    }
+    & button {
+      color: $colour-hover;
+      border-color: $colour-hover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    & .text_launch h2 {
+      font-size: 50px;
+      margin-bottom: 0;
+    }
+    & .text_launch .day {
+      margin-top: 30px;
+    }
+    & .text_launch .day p {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    & .countdown_next_launch {
+      margin-bottom: 0;
+      margin-top: 25px;
+      font-size: 39px;
+    }
+    & .countdown_next_launch p {
+      font-size: 40px;
+    }
+    & .text_launch button {
+      margin-top: 50px;
+      box-shadow: $colour-hover 1px 1px 5px 0px;
+    }
+    & .text_launch button:hover {
+      color: $colour-primary;
+      background: $colour-hover;
+      transition: 0.2s;
+      border: 3px solid $colour-hover;
+    }
+  }
+}
+
+#next_launch .countdown_next_launch {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #c14444;
+  font-size: 29px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  justify-content: center;
+}
+
+#next_launch .countdown_next_launch p {
+  color: #0071bc;
+  font-size: 25px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  width: 25%;
+}

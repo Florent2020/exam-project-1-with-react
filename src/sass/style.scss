@@ -1,0 +1,22 @@
+$colour-primary: #fff;
+$colour-secondary: #73bda9;
+$colour-bg: #000;
+$colour-hover: #0071bc;
+$colour-error: #c53131;
+
+$body-font-family: "Nunito", sans-serif;
+$heading-font-family: "Orbitron", sans-serif;
+
+$tablet-width: 992px;
+
+// MY TASK
+@import "~bootstrap/scss/bootstrap";
+@import "./partials/layout";
+@import "./partials/typography";
+@import "./partials/nav";
+@import "./partials/bgVideo";
+@import "./partials/jumbotron";
+@import "./partials/nextLaunch";
+@import "./partials/footer";
+@import "./partials/forms";
+@import "./partials/contact";

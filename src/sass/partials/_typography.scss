@@ -1,0 +1,13 @@
+h1,
+h2,
+h3 {
+  font-family: $heading-font-family;
+  color: $colour-primary;
+}
+
+p,
+h6 {
+  font-family: $body-font-family;
+  color: $colour-primary;
+  padding-bottom: 10px;
+}

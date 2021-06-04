@@ -1,0 +1,26 @@
+.jumbotron h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 23px;
+  text-shadow: 1px 1px #0071bc;
+  margin-bottom: 100px;
+  padding-top: 80px;
+  position: relative;
+  animation: title_h1;
+  animation-duration: 3s;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding: 160px 0 70px;
+  }
+}
+
+@keyframes title_h1 {
+  from {
+    left: -75%;
+  }
+  to {
+    left: 0;
+  }
+}

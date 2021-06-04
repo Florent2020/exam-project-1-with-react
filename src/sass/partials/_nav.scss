@@ -1,0 +1,68 @@
+.navbar {
+  background-color: $colour-bg !important;
+  padding: 20px 0;
+
+  & .logo {
+    width: 115px;
+  }
+}
+
+.navbar-dark .navbar-toggler {
+  width: 55px !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 1px;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.navbar-collapse {
+  padding-top: 20px;
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  text-transform: uppercase !important;
+  color: $colour-secondary;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 700;
+  padding: 15px 0;
+
+  &:hover {
+    color: $colour-hover;
+  }
+
+  &.active {
+    color: $colour-primary;
+
+    &:hover {
+      color: $colour-hover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    padding: 0;
+    color: $colour-primary;
+
+    &:hover {
+      color: $colour-hover;
+    }
+    &.active {
+      border-bottom: 3px solid $colour-primary;
+      padding-bottom: 1px;
+
+      &:hover {
+        border-bottom: 3px solid $colour-hover;
+        color: $colour-hover;
+      }
+    }
+  }
+}
