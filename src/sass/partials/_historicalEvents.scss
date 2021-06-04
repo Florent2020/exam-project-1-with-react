@@ -1,0 +1,167 @@
+#main_history {
+  & h1 {
+    font-size: 35px;
+    text-transform: capitalize;
+    padding: 80px 0 40px;
+    text-align: center;
+
+    & span {
+      color: $colour-hover;
+    }
+  }
+
+  & .spaceX {
+    margin: 0 auto;
+    border: 2px solid $colour-secondary;
+    background: $colour-bg;
+    padding: 10px;
+    height: 400px;
+    overflow: hidden scroll;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 0;
+  }
+
+  & .title {
+    display: flex;
+    font-size: 13px;
+    position: sticky;
+    top: 0;
+    background: $colour-bg;
+    padding: 5px 0;
+
+    & p {
+      color: $colour-primary;
+      font-family: "Nunito", sans-serif;
+      margin-bottom: 0;
+    }
+
+    & .btn,
+    .btn-info,
+    .historical_btn {
+      width: auto;
+      background-color: transparent;
+      border-color: transparent;
+      font-weight: normal;
+      text-decoration: none;
+      padding-left: 0;
+    }
+
+    & .historical_events {
+      width: 100%;
+    }
+  }
+}
+
+.spaceX_history p {
+  color: $colour-secondary;
+  font-size: 12px;
+}
+
+.spaceX_history a {
+  color: $colour-hover;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+}
+
+.spaceX_history a:hover {
+  color: $colour-primary;
+}
+
+.historical_events .details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.id {
+  width: 3%;
+  text-align: left;
+  float: left;
+  padding: 5px 10px;
+}
+
+.title_ {
+  width: 19%;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.date {
+  width: 13%;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.flight_number {
+  width: 10%;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.detail {
+  width: 43%;
+  text-align: left;
+  padding: 5px 10px;
+  margin-right: 30px;
+}
+
+.spaceX::-webkit-scrollbar {
+  width: 15px;
+}
+
+.spaceX::-webkit-scrollbar-track {
+  background: $colour-primary;
+}
+
+.spaceX::-webkit-scrollbar-thumb {
+  background: $colour-secondary;
+}
+
+.spaceX::-webkit-scrollbar-thumb:hover {
+  background: $colour-secondary;
+}
+
+@media screen and (max-width: $tablet-width) {
+  #main_history h1 {
+    font-size: 26px;
+    text-align: left;
+    max-width: 85%;
+    padding-top: 50px;
+  }
+  #main_history .id,
+  #main_history .flight_number,
+  #main_history .detail {
+    display: none;
+  }
+  #main_history .spaceX {
+    padding: 5px;
+    border: 1px solid #73bda9;
+    padding-top: 0;
+  }
+  #main_history .title_ {
+    width: 46%;
+    line-height: 1.2;
+  }
+  #main_history .date {
+    width: 31%;
+    line-height: 1.2;
+  }
+  #main_history .title .btn,
+  #main_history .title .btn-info,
+  #main_history .title .historical_btn {
+    padding: 0;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  #main_history .spaceX::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1405px) {
+  #main_history .spaceX {
+    max-width: 85%;
+    height: 500px;
+    overflow: scroll;
+  }
+}
