@@ -43,28 +43,39 @@ img {
 }
 
 button {
-  font-family: "Orbitron", sans-serif;
+  font-family: $heading-font-family;
   text-transform: uppercase;
   width: 200px;
   padding: 15px 10px;
   font-size: 15px;
   font-weight: bold;
-  color: #fff;
+  color: $colour-primary;
   background: transparent;
   border-radius: 10px;
-  border: 3px solid #fff;
+  border: 3px solid $colour-primary;
   cursor: pointer;
   outline: none;
+}
+
+button:hover {
+  color: $colour-primary;
+  background-color: $colour-hover;
+  transition: 0.2s;
+  border: 3px solid $colour-hover;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .wrapper {
   flex: 1 0 auto;
+}
+
+main {
+  padding-top: 75px;
 }
 
 footer {
@@ -72,21 +83,3 @@ footer {
   background-color: transparent;
   margin-top: 2rem;
 }
-
-// @media (min-width: $tablet-width) {
-//   footer .footer {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: left;
-//     padding: 20px 0;
-
-//     & .footer__item--social-media {
-//       text-align: left;
-//       padding: 0;
-//     }
-
-//     & .footer__item--email {
-//       padding: 0;
-//     }
-//   }
-// }

@@ -3,7 +3,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 23px;
-  text-shadow: 1px 1px #0071bc;
+  text-shadow: 1px 1px $colour-hover;
   margin-bottom: 100px;
   padding-top: 80px;
   position: relative;
@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     padding: 160px 0 70px;
+    font-weight: 700;
   }
 }
 

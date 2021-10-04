@@ -1,0 +1,23 @@
+.spinner--container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-29%, -50%);
+  display: flex;
+  position: fixed;
+
+  & span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -80px;
+    font-size: 13px;
+    color: $colour-primary;
+  }
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  animation: 1.3s linear infinite spinner-border;
+}

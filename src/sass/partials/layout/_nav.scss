@@ -1,6 +1,9 @@
 .navbar {
   background-color: $colour-bg !important;
   padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 
   & .logo {
     width: 115px;
